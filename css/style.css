@@ -148,7 +148,7 @@ body {
     padding: 18px;
     border: 2px solid white;
     border-radius: 15px;
-    transition: background 1s;
+    transition: background-color 1s;
 }
 
 .ubic:hover{
