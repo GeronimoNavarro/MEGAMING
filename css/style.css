@@ -148,11 +148,11 @@ body {
     padding: 18px;
     border: 2px solid white;
     border-radius: 15px;
-    transition: background-color 1s;
+    transition: background 1s;
 }
 
 .ubic:hover{
-    background-color: rgb(180, 144, 247);
+    background-color: rgb(160, 90, 252);
 }
 
 .mapasimg {
