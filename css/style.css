@@ -65,6 +65,7 @@
 
 .main{
     grid-area: main;
+    background-color: rgb(115, 0, 223);
 }
 
 .hero{
@@ -108,63 +109,35 @@
     text-shadow: 1px 1px 1px black;
 }
 
-.sections{
-    width: 100%;
-    background-image: linear-gradient(to bottom, black, rgb(40, 40, 212));
-}
-
-.sections h2{
-    display: flex;
+.main > h2{
+    display:flex;
     align-items: center;
     justify-content: center;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 2px 2px 2px black;
-    padding: 105px;
+    padding:105px;
     font-size: 35px;
+    background-image: linear-gradient(to bottom, black, rgb(115, 0, 223));
 }
 
-.cards{
-    padding-left: 15px;
-    padding-right: 15px;
+.sections{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-
-.cards div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: 400px;
-    border: 1px solid black;
-    background-image: linear-gradient(to top, rgb(82, 81, 81), white);
-    border-radius: 10px;
-}
-
-
-
-.cards h3{
-    padding-bottom: 20px;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: rgb(0, 144, 240);
-    text-shadow: 1px 1px 1px rgb(83, 83, 83);
-}
-
-.cards img{
+    padding-top: 25px;
     width: 100%;
+    background-image: linear-gradient(to bottom, rgb(115, 0, 223), rgb(40, 40, 212))
+    
 }
 
-.cards button{
-    background-color: #7b7b7b;
-    border-radius: 10px;
-    justify-content: center;
+.sections div a{
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
+
+
 
 .mapas{
     padding-top: 65px;
@@ -173,7 +146,8 @@
 }
 
 .mapas h2{
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,7 +164,16 @@
 .mapas div div{
     width: 350px;
     height: 350px;
-    border: 1px solid black;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.mapas div div h3{
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
 }
 
 .mapas div div img{
@@ -226,7 +209,10 @@
 }
 
 .footer ul li a:hover{
-    color: #004aad;
+    color: white;
     text-shadow:black;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
 }
 
