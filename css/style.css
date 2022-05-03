@@ -1,8 +1,3 @@
-* {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
 
 /*--LAYOUT--*/
 
@@ -26,6 +21,7 @@
     align-items: center;
     background-image: linear-gradient(to top, black, rgb(115, 0, 223));
     grid-area: header;
+    padding-bottom: 25px;
 }
 
 .header img{
@@ -55,7 +51,7 @@
 }
 
 .header nav ul li a:hover{
-    color: #004aad;
+    color: #0066eb;
     transition: 0,5s;
     text-shadow: 0ch;
 }
@@ -125,10 +121,15 @@
 .sections{
     display: flex;
     justify-content: space-between;
-    padding-top: 25px;
+    padding-top: 2px;
     width: 100%;
-    background-image: linear-gradient(to bottom, rgb(115, 0, 223), rgb(40, 40, 212))
-    
+    background-image: linear-gradient(to bottom, rgb(115, 0, 223), rgb(40, 40, 212));
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sections div div{
+    background-image: linear-gradient(to top, rgb(100, 100, 100),rgb(255, 255, 255));
 }
 
 .sections div a{
@@ -190,16 +191,16 @@
     justify-content: space-between;
     align-items: center;
     background-color:  rgb(115, 0, 223);
+    padding-bottom: 10px;
 }
 
-.footer img{
+.footer a img{
     margin-left: 15px;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 150px;
     border: 2px solid black;
 }
-
 
 
 .footer ul li a{
@@ -214,5 +215,33 @@
     background-color: black;
     border: 1px solid white;
     border-radius: 5px;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes img{
+    width: 40px;
+    height: 40px;
+}
+
+
+/*--FORMULARIO DE CONTACTO--*/
+
+.contactoform{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.767), rgba(115, 0, 223, 0.76));
+    color: white;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactoform div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
