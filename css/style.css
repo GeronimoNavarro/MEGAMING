@@ -48,11 +48,12 @@
     font-weight: bold;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px black;
+    transition: font-size 1s;
 }
 
 .header nav ul li a:hover{
     color: #0066eb;
-    transition: 0,5s;
+    font-size: 25px;
     text-shadow: 0ch;
 }
 
@@ -130,6 +131,11 @@
 
 .sections div div{
     background-image: linear-gradient(to top, rgb(100, 100, 100),rgb(255, 255, 255));
+    transition: background-image 1s;
+}
+
+.sections div div:hover{
+    background-image: linear-gradient(to bottom,  rgb(100, 100, 100),rgb(255, 255, 255));
 }
 
 .sections div a{
@@ -163,10 +169,16 @@
 }
 
 .mapas div div{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 80px;
     border: 1px solid white;
     border-radius: 15px;
+    transition: width heigth 4s;
+}
+
+.mapas div div:hover{
+    width: 400px;
+    height: 120px;
 }
 
 .mapas div div h3{
@@ -177,10 +189,16 @@
     color: white;
 }
 
-.mapas div div img{
-    width: 100%;
+.mapas div div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
+.mapas div div a:hover{
+    color: #0066eb;
+}
 
 /*--FOOTER--*/
 
@@ -228,7 +246,7 @@
 }
 
 
-/*--FORMULARIO DE CONTACTO--*/
+/*--PAGES--CONTACTO--*/
 
 .contactoform{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.767), rgba(115, 0, 223, 0.76));
@@ -245,3 +263,105 @@
     align-items: center;
 }
 
+
+
+/*--PAGES--ACERCA DE NOSOTROS*/
+
+.biografia{
+    background: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.514)), url("../imagenes/herosection.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right:50px ;
+    padding-top: 30px;
+}
+
+.biografia div{
+    background-color: rgba(0, 0, 0, 0.712);
+}
+
+
+/*--PAGES--PRODUCTOS--*/
+
+
+/*--PAGES--SERVICIOS--*/
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIAS QUERIES*/
+
+@media screen and (max-width: 1200px){
+    .sections{
+        flex-wrap: wrap;
+    }
+
+    .hero{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000){
+    .header nav ul li a{
+        font-size: 10px;
+    }
+
+    .header{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 578px){
+    .header{
+        flex-direction: column;
+    }
+
+    .header nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero{
+        flex-direction: column;
+    }
+
+    h2{
+        justify-content: center;
+    }
+
+    .main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mapas > div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mapas div{
+        padding: 5px;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .redes{
+        flex-direction: column;
+    }
+}
