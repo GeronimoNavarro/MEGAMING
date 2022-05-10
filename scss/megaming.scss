@@ -1,11 +1,13 @@
-p{
-    color: red;
-}
+@import "base/variables";
 
-header{
-    background-color: black;
-}
+@import "layout/layoutgrid";
 
-footer{
-    font-size: 15px;
-}
+@import "layout/header";
+
+@import "layout/main";
+
+@import "layout/footer";
+
+@import "pages/acercadenosotros";
+
+@import "pages/contacto";

@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to top, black, rgb(115, 0, 223));
+    grid-area: header;
+    padding-bottom: 25px;
+
+    img {
+        margin-left: 15px;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        border-radius: 200px;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                margin: 25px;
+
+                a {
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-shadow: 1px 1px 1px black;
+                    transition: font-size 1s;
+
+                    &:hover{
+                        color: #0066eb;
+                        font-size: 25px;
+                        text-shadow: 0ch;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,135 @@
+.main {
+    grid-area: main;
+    background-color: rgb(115, 0, 223);
+
+    h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-shadow: 2px 2px 2px black;
+        padding: 105px;
+        font-size: 35px;
+        background-image: linear-gradient(to bottom, black, rgb(115, 0, 223));
+    }
+}
+
+.hero {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.514)), url("../imagenes/heroSection.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    h1 {
+        font-size: 60px;
+        color: beige;
+    }
+
+    p {
+        font-size: 15px;
+        color: beige;
+    }
+
+    a {
+        color: white;
+        background-color: #7b7b7b;
+        border: 1px solid black;
+        border-radius: 3px;
+        text-decoration: none;
+        font-size: 15px;
+        margin-top: 5px;
+        transition: background-color 1s;
+
+        &a {
+            background-color: #004aad;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+        }
+    }
+}
+
+.sections {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgb(115, 0, 223), rgb(40, 40, 212));
+    padding-left: 20px;
+    padding-right: 20px;
+
+    div {
+        div {
+            background-image: linear-gradient(to top, rgb(100, 100, 100), rgb(255, 255, 255));
+            transition: background-image 1s;
+
+            &div {
+                background-image: linear-gradient(to bottom, rgb(100, 100, 100), rgb(255, 255, 255));
+            }
+        }
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.mapas {
+    padding-top: 65px;
+    padding-bottom: 180px;
+    background-image: linear-gradient(to bottom, rgb(40, 40, 212), rgb(115, 0, 223));
+
+    h2 {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+
+        div {
+            width: 300px;
+            height: 80px;
+            border: 1px solid white;
+            border-radius: 15px;
+            transition: width heigth 4s;
+
+            &:hover{
+                width: 400px;
+                height: 120px;
+            }
+
+            h3 {
+                display: flex;
+                justify-content: center;
+                border: 1px solid white;
+                border-radius: 10px;
+                color: white;
+            }
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+        }
+    }
+}

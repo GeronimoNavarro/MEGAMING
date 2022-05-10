@@ -1,8 +1,203 @@
-p {
-  color: red; }
+.grid-container {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1.4fr 0.3fr;
+  gap: 0px 0px;
+  grid-template-areas: "header header"
+"main main"
+"footer footer"; }
 
-header {
-  background-color: black; }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to top, black, #7300df);
+  grid-area: header;
+  padding-bottom: 25px; }
+  .header img {
+    margin-left: 15px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 200px; }
+  .header nav ul {
+    display: flex;
+    list-style: none; }
+    .header nav ul li {
+      margin: 25px; }
+      .header nav ul li a {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px black;
+        transition: font-size 1s; }
+        .header nav ul li a:hover {
+          color: #0066eb;
+          font-size: 25px;
+          text-shadow: 0ch; }
+
+.main {
+  grid-area: main;
+  background-color: #7300df; }
+  .main h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+    padding: 105px;
+    font-size: 35px;
+    background-image: linear-gradient(to bottom, black, #7300df); }
+
+.hero {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.514)), url("../imagenes/heroSection.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .hero h1 {
+    font-size: 60px;
+    color: beige; }
+  .hero p {
+    font-size: 15px;
+    color: beige; }
+  .hero a {
+    color: white;
+    background-color: #7b7b7b;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 5px;
+    transition: background-color 1s; }
+    .hero aa {
+      background-color: #004aad;
+      color: white;
+      text-shadow: 1px 1px 1px black; }
+
+.sections {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2px;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #7300df, #2828d4);
+  padding-left: 20px;
+  padding-right: 20px; }
+  .sections div div {
+    background-image: linear-gradient(to top, #646464, white);
+    transition: background-image 1s; }
+    .sections div divdiv {
+      background-image: linear-gradient(to bottom, #646464, white); }
+  .sections a {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.mapas {
+  padding-top: 65px;
+  padding-bottom: 180px;
+  background-image: linear-gradient(to bottom, #2828d4, #7300df); }
+  .mapas h2 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 2px black; }
+  .mapas div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; }
+    .mapas div div {
+      width: 300px;
+      height: 80px;
+      border: 1px solid white;
+      border-radius: 15px;
+      transition: width heigth 4s; }
+      .mapas div div:hover {
+        width: 400px;
+        height: 120px; }
+      .mapas div div h3 {
+        display: flex;
+        justify-content: center;
+        border: 1px solid white;
+        border-radius: 10px;
+        color: white; }
+      .mapas div div a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white; }
 
 footer {
-  font-size: 15px; }
+  grid-area: footer;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7300df;
+  padding-bottom: 10px; }
+  footer ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: white; }
+    footer ul li a:hover {
+      color: white;
+      text-shadow: black;
+      background-color: black;
+      border: 1px solid white;
+      border-radius: 5px; }
+      footer ul li a:hover img {
+        margin-left: 15px;
+        width: 200px;
+        height: 200px;
+        border-radius: 150px;
+        border: 2px solid black; }
+
+.redes {
+  display: flex;
+  justify-content: space-between; }
+  .redes img {
+    width: 40px;
+    height: 40px; }
+
+.biografia {
+  background: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.514)), url("../imagenes/herosection.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px; }
+  .biografia div {
+    background-color: rgba(0, 0, 0, 0.712); }
+
+.contactoform {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.767), rgba(115, 0, 223, 0.76));
+  color: white;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contactoform div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }

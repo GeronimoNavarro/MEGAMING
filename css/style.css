@@ -339,13 +339,15 @@
         flex-direction: column;
     }
 
-    h2{
+    .sections{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         justify-content: center;
     }
 
-    .main{
-        flex-direction: column;
-        align-items: center;
+    .card{
+        margin: 15px;
     }
 
     .mapas > div{
@@ -353,8 +355,8 @@
         align-items: center;
     }
 
-    .mapas div{
-        padding: 5px;
+    .mapas > div div{
+        margin: 15px;
     }
 
     .footer{
@@ -363,5 +365,10 @@
 
     .redes{
         flex-direction: column;
+    }
+
+    .redes a img{
+        width: 55px ;
+        height: 55px;
     }
 }
