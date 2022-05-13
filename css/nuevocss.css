@@ -1,3 +1,16 @@
+mapas-map {
+  border: 1px; }
+
+mapas-map {
+  border: solid; }
+
+mapas-map {
+  border: white; }
+
+.h1, .hero h1 {
+  font-size: 60px;
+  color: beige; }
+
 .grid-container {
   font-family: Arial, Helvetica, sans-serif;
   display: grid;
@@ -56,17 +69,14 @@
   width: 100%;
   height: 80vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.514)), url("../imagenes/heroSection.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
-  .hero h1 {
-    font-size: 60px;
-    color: beige; }
   .hero p {
     font-size: 15px;
     color: beige; }
@@ -110,8 +120,8 @@
     padding-top: 20px;
     padding-bottom: 30px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     color: white;
     text-shadow: 2px 2px 2px black; }
   .mapas div {
@@ -130,13 +140,11 @@
       .mapas div div h3 {
         display: flex;
         justify-content: center;
-        border: 1px solid white;
-        border-radius: 10px;
         color: white; }
       .mapas div div a {
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         color: white; }
 
 footer {

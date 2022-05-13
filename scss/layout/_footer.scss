@@ -4,13 +4,13 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $background-color;
+    background-color: rgb(115, 0, 223);
     padding-bottom: 10px;
 
     img{
         margin-left: 15px;
-        width: 200px;
-        height: 200px;
+        width: map-get($logofooter,width);
+        height: map-get($logofooter,height);
         border-radius: 150px;
         border: 2px solid black;
     }

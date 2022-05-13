@@ -3,9 +3,7 @@
     background-color: rgb(115, 0, 223);
 
     h2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex;
         color: white;
         text-transform: uppercase;
         font-weight: bold;
@@ -19,10 +17,8 @@
 .hero {
     width: 100%;
     height: 80vh;
-    display: flex;
+    @include flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.514)), url("../imagenes/heroSection.jpeg");
     background-position: center;
     background-repeat: no-repeat;
@@ -30,8 +26,7 @@
     background-attachment: fixed;
 
     h1 {
-        font-size: 60px;
-        color: beige;
+        @extend .h1;
     }
 
     p {
@@ -78,9 +73,7 @@
     }
 
     a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex;
     }
 }
 
@@ -92,9 +85,7 @@
     h2 {
         padding-top: 20px;
         padding-bottom: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex;
         color: white;
         text-shadow: 2px 2px 2px black;
     }
@@ -107,7 +98,7 @@
         div {
             width: 300px;
             height: 80px;
-            border: 1px solid white;
+            border: $mapas;
             border-radius: 15px;
             transition: width heigth 4s;
 
@@ -119,15 +110,11 @@
             h3 {
                 display: flex;
                 justify-content: center;
-                border: 1px solid white;
-                border-radius: 10px;
                 color: white;
             }
 
             a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex;
                 color: white;
             }
         }
