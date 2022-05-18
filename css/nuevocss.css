@@ -15,39 +15,36 @@ mapas-map {
   font-family: Arial, Helvetica, sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.2fr 1.4fr 0.3fr;
+  grid-template-rows: 0.5fr auto 0,5fr;
   gap: 0px 0px;
   grid-template-areas: "header header" "main main" "footer footer"; }
 
-.header {
+.navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to top, black, #7300df);
+  background-image: linear-gradient(to top, #111111, #7300df);
   grid-area: header;
-  padding-bottom: 25px; }
-  .header img {
+  width: 100%; }
+  .navbar img {
     margin-left: 15px;
     width: 200px;
     height: 200px;
     border: 2px solid black;
     border-radius: 200px; }
-  .header nav ul {
+  .navbar nav ul {
     display: flex;
     list-style: none; }
-    .header nav ul li {
+    .navbar nav ul li {
       margin: 25px; }
-      .header nav ul li a {
+      .navbar nav ul li a {
         font-size: 20px;
         text-decoration: none;
         color: white;
         font-weight: bold;
         text-transform: uppercase;
-        text-shadow: 1px 1px 1px black;
-        transition: font-size 1s; }
-        .header nav ul li a:hover {
+        text-shadow: 1px 1px 1px black; }
+        .navbar nav ul li a:hover {
           color: #0066eb;
-          font-size: 25px;
           text-shadow: 0ch; }
 
 .main {
@@ -101,7 +98,8 @@ mapas-map {
   width: 100%;
   background-image: linear-gradient(to bottom, #7300df, #2828d4);
   padding-left: 20px;
-  padding-right: 20px; }
+  padding-right: 20px;
+  padding-bottom: 20px; }
   .sections div div {
     background-image: linear-gradient(to top, #646464, white);
     transition: background-image 1s; }
@@ -112,11 +110,10 @@ mapas-map {
     align-items: center;
     justify-content: center; }
 
-.mapas {
-  padding-top: 65px;
-  padding-bottom: 180px;
+.ubicaciones {
+  padding-bottom: 25px;
   background-image: linear-gradient(to bottom, #2828d4, #7300df); }
-  .mapas h2 {
+  .ubicaciones h2 {
     padding-top: 20px;
     padding-bottom: 30px;
     display: flex;
@@ -124,24 +121,23 @@ mapas-map {
     justify-content: center;
     color: white;
     text-shadow: 2px 2px 2px black; }
-  .mapas div {
+  .ubicaciones div {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 20px; }
-    .mapas div div {
-      width: 300px;
-      height: 80px;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .ubicaciones div div {
+      flex-direction: column;
+      justify-content: space-between;
       border: 1px solid white;
-      border-radius: 15px;
-      transition: width heigth 4s; }
-      .mapas div div:hover {
-        width: 400px;
-        height: 120px; }
-      .mapas div div h3 {
-        display: flex;
-        justify-content: center;
-        color: white; }
-      .mapas div div a {
+      border-radius: 5px; }
+      .ubicaciones div div img {
+        width: 100%; }
+      .ubicaciones div div h3 {
+        color: white;
+        text-transform: uppercase; }
+      .ubicaciones div div a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -208,24 +204,44 @@ footer {
     flex-direction: column;
     align-items: center; }
 
+.servicios {
+  background-image: linear-gradient(to bottom, #7300df, #2828d4); }
+  .servicios div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-image: linear-gradient(to top, #646464, white); }
+    .servicios divdiv {
+      background-image: linear-gradient(to bottom, #646464, white); }
+
 @media screen and (max-width: 1200px) {
   .sections {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
   .hero {
     width: 100%; } }
 
-@media screen and (max-width: 1000) {
-  .header {
+@media screen and (max-width: 1070) {
+  .navbar {
+    display: flex;
     flex-direction: column; }
-    .header nav ul li a {
-      font-size: 10px; } }
+    .navbar nav ul {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .navbar nav ul li a {
+        font-size: 10px; } }
 
 @media screen and (max-width: 578px) {
-  .header {
+  .navbar {
     flex-direction: column; }
-    .header nav ul {
+    .navbar nav ul {
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
   .hero {
     flex-direction: column; }
   .sections {
@@ -235,10 +251,10 @@ footer {
     justify-content: center; }
   .card {
     margin: 15px; }
-  .mapas > div {
+  .ubicaciones > div {
     flex-direction: column;
     align-items: center; }
-    .mapas > div div {
+    .ubicaciones > div div {
       margin: 15px; }
   .footer {
     flex-direction: column; }

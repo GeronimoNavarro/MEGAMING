@@ -1,10 +1,9 @@
-.header {
+.navbar{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to top, black, rgb(115, 0, 223));
+    background-image: linear-gradient(to top, rgb(17, 17, 17), rgb(115, 0, 223));
     grid-area: header;
-    padding-bottom: 25px;
+    width: 100%;
 
     img {
         margin-left: 15px;
@@ -18,7 +17,6 @@
         ul {
             display: flex;
             list-style: none;
-
             li {
                 margin: 25px;
 
@@ -29,11 +27,9 @@
                     font-weight: bold;
                     text-transform: uppercase;
                     text-shadow: 1px 1px 1px black;
-                    transition: font-size 1s;
 
                     &:hover{
                         color: #0066eb;
-                        font-size: 25px;
                         text-shadow: 0ch;
                     }
                 }
