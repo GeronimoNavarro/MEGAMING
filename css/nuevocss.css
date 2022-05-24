@@ -19,33 +19,11 @@ mapas-map {
   gap: 0px 0px;
   grid-template-areas: "header header" "main main" "footer footer"; }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  background-image: linear-gradient(to top, #111111, #7300df);
+header {
   grid-area: header;
-  width: 100%; }
-  .navbar img {
-    margin-left: 15px;
-    width: 200px;
-    height: 200px;
-    border: 2px solid black;
-    border-radius: 200px; }
-  .navbar nav ul {
-    display: flex;
-    list-style: none; }
-    .navbar nav ul li {
-      margin: 25px; }
-      .navbar nav ul li a {
-        font-size: 20px;
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-shadow: 1px 1px 1px black; }
-        .navbar nav ul li a:hover {
-          color: #0066eb;
-          text-shadow: 0ch; }
+  background-image: linear-gradient(to bottom, black, #7300df); }
+  header img {
+    width: 100px; }
 
 .main {
   grid-area: main;
@@ -78,6 +56,7 @@ mapas-map {
     font-size: 15px;
     color: beige; }
   .hero a {
+    padding: 5px;
     color: white;
     background-color: #7b7b7b;
     border: 1px solid black;
@@ -85,26 +64,32 @@ mapas-map {
     text-decoration: none;
     font-size: 15px;
     margin-top: 5px;
-    transition: background-color 1s; }
-    .hero aa {
+    transition: background-color 0,5s; }
+    .hero a:hover {
       background-color: #004aad;
       color: white;
       text-shadow: 1px 1px 1px black; }
 
 .sections {
   display: flex;
-  justify-content: space-between;
-  padding-top: 2px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   background-image: linear-gradient(to bottom, #7300df, #2828d4);
   padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px; }
-  .sections div div {
-    background-image: linear-gradient(to top, #646464, white);
-    transition: background-image 1s; }
-    .sections div divdiv {
-      background-image: linear-gradient(to bottom, #646464, white); }
+  padding-right: 20px; }
+  .sections div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; }
+    .sections div img {
+      width: 100%;
+      height: 220px;
+      align-items: center;
+      justify-content: center; }
   .sections a {
     display: flex;
     align-items: center;
@@ -131,7 +116,8 @@ mapas-map {
       flex-direction: column;
       justify-content: space-between;
       border: 1px solid white;
-      border-radius: 5px; }
+      border-radius: 5px;
+      padding: 5px; }
       .ubicaciones div div img {
         width: 100%; }
       .ubicaciones div div h3 {
@@ -154,19 +140,18 @@ footer {
   footer img {
     margin-left: 15px;
     width: 200px;
-    height: 200px;
-    border-radius: 150px;
-    border: 2px solid black; }
-  footer ul li a {
-    list-style: none;
-    text-decoration: none;
-    color: white; }
-    footer ul li a:hover {
-      color: white;
-      text-shadow: black;
-      background-color: black;
-      border: 1px solid white;
-      border-radius: 5px; }
+    height: 200px; }
+  footer ul li {
+    list-style: none; }
+    footer ul li a {
+      text-decoration: none;
+      color: white; }
+      footer ul li a:hover {
+        color: white;
+        text-shadow: black;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 5px; }
 
 .redes {
   display: flex;
@@ -175,7 +160,7 @@ footer {
     width: 80px;
     height: 80px; }
 
-.biografia {
+.biografiayservicios {
   background: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.514)), url("../imagenes/herosection.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -189,8 +174,15 @@ footer {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 30px; }
-  .biografia div {
+  .biografiayservicios div {
     background-color: rgba(0, 0, 0, 0.712); }
+  .biografiayservicios h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .biografiayservicios button {
+    background-color: black;
+    color: white; }
 
 .contactoform {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.767), rgba(115, 0, 223, 0.76));
@@ -216,6 +208,39 @@ footer {
     .servicios divdiv {
       background-image: linear-gradient(to bottom, #646464, white); }
 
+section {
+  padding-bottom: 50px;
+  background-image: linear-gradient(to bottom, #7300df, #2828d4); }
+  section h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; }
+  section .sections {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #7300df, #2828d4);
+    padding-left: 20px;
+    padding-right: 20px; }
+    section .sections div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%; }
+      section .sections div img {
+        width: 100%;
+        height: 220px;
+        align-items: center;
+        justify-content: center; }
+    section .sections a {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
 @media screen and (max-width: 1200px) {
   .sections {
     flex-wrap: wrap;
@@ -224,26 +249,11 @@ footer {
   .hero {
     width: 100%; } }
 
-@media screen and (max-width: 1070) {
-  .navbar {
-    display: flex;
-    flex-direction: column; }
-    .navbar nav ul {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
-      .navbar nav ul li a {
-        font-size: 10px; } }
-
 @media screen and (max-width: 578px) {
-  .navbar {
-    flex-direction: column; }
-    .navbar nav ul {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
   .hero {
     flex-direction: column; }
+  .contactoform h1 {
+    font-size: 30px; }
   .sections {
     display: flex;
     flex-wrap: wrap;

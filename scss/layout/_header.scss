@@ -1,39 +1,7 @@
-.navbar{
-    display: flex;
-    align-items: center;
-    background-image: linear-gradient(to top, rgb(17, 17, 17), rgb(115, 0, 223));
+header{
     grid-area: header;
-    width: 100%;
-
-    img {
-        margin-left: 15px;
-        width: 200px;
-        height: 200px;
-        border: 2px solid black;
-        border-radius: 200px;
-    }
-
-    nav {
-        ul {
-            display: flex;
-            list-style: none;
-            li {
-                margin: 25px;
-
-                a {
-                    font-size: 20px;
-                    text-decoration: none;
-                    color: white;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    text-shadow: 1px 1px 1px black;
-
-                    &:hover{
-                        color: #0066eb;
-                        text-shadow: 0ch;
-                    }
-                }
-            }
+    background-image: linear-gradient(to bottom, black, #7300df);
+    img{
+        width: 100px;
         }
     }
-}

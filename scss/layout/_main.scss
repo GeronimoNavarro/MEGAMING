@@ -35,6 +35,7 @@
     }
 
     a {
+        padding: 5px;
         color: white;
         background-color: #7b7b7b;
         border: 1px solid black;
@@ -42,9 +43,9 @@
         text-decoration: none;
         font-size: 15px;
         margin-top: 5px;
-        transition: background-color 1s;
+        transition: background-color 0,5s;
 
-        &a {
+        &:hover {
             background-color: #004aad;
             color: white;
             text-shadow: 1px 1px 1px black;
@@ -54,22 +55,25 @@
 
 .sections {
     display: flex;
-    justify-content: space-between;
-    padding-top: 2px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     background-image: linear-gradient(to bottom, rgb(115, 0, 223), rgb(40, 40, 212));
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
 
     div {
-        div {
-            background-image: linear-gradient(to top, rgb(100, 100, 100), rgb(255, 255, 255));
-            transition: background-image 1s;
-
-            &div {
-                background-image: linear-gradient(to bottom, rgb(100, 100, 100), rgb(255, 255, 255));
-            }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        img{
+            width: 100%;
+            height: 220px;
+            align-items: center;
+            justify-content: center;
         }
     }
 
@@ -102,6 +106,7 @@
             justify-content: space-between;
             border: $mapas;
             border-radius: 5px;
+            padding: 5px;
 
             img{
                 width: 100%;

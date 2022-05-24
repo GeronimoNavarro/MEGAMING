@@ -1,7 +1,7 @@
 
 
 
-.biografia{
+.biografiayservicios{
     background: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.514)), url("../imagenes/herosection.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -18,5 +18,16 @@
 
     div{
         background-color: rgba(0, 0, 0, 0.712);
+    }
+    
+    h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    button{
+        background-color: black;
+        color: white;
     }
 }

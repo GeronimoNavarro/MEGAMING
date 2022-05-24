@@ -11,14 +11,12 @@ footer{
         margin-left: 15px;
         width: map-get($logofooter,width);
         height: map-get($logofooter,height);
-        border-radius: 150px;
-        border: 2px solid black;
     }
 
     ul{
         li{
+            list-style: none;
             a{
-                list-style: none;
                 text-decoration: none;
                 color: white;
                 &:hover{
