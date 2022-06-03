@@ -1,7 +1,18 @@
-header{
+header {
     grid-area: header;
     background-image: linear-gradient(to bottom, black, #7300df);
-    img{
-        width: 100px;
+
+    nav {
+        width: 100%;
+
+        img {
+            width: 100px;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
+}
